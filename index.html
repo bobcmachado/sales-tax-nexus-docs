@@ -1,0 +1,86 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NexusLedger — Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    max-width: 34rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem;
+  }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.05rem; margin-top: 2rem; }
+  .lede { opacity: .75; margin-top: 0; }
+  .notice { border-left: 3px solid currentColor; padding-left: 1rem; opacity: .8; font-size: .95rem; }
+  dt { font-weight: 600; margin-top: 1rem; }
+  dd { margin: .25rem 0 0; }
+  footer { margin-top: 3rem; font-size: .85rem; opacity: .65; }
+</style>
+
+<h1>NexusLedger</h1>
+<p class="lede">Support and contact.</p>
+
+<h2>Getting help</h2>
+<p>
+  Write to <a href="mailto:support.NexusLedger@gmail.com">support.NexusLedger@gmail.com</a>. Include the state
+  you were looking at and, if the problem is an import, the header row of your CSV — the first line
+  only, never the orders themselves.
+</p>
+
+<h2>Common questions</h2>
+<dl>
+  <dt>My state says “rule not available”.</dt>
+  <dd>
+    That state has no rule file yet. The app shows no threshold rather than a plausible one,
+    because a default nobody checked is the worst number it could show. The states it does cover
+    are listed inside the app under Settings → Rule sources, each with the page it was copied from
+    and the date a person read it.
+  </dd>
+
+  <dt>My import stopped and listed column names.</dt>
+  <dd>
+    The file did not contain a column the import needs, and it refuses to guess which one you
+    meant. Use the generic adapter and map the columns yourself, or rename the headers to one of
+    the names it listed.
+  </dd>
+
+  <dt>Some orders are “unassigned”.</dt>
+  <dd>
+    Those orders had no destination state in the file. They are never dropped and never added to a
+    state: their count and value sit beside every total, because a state total that quietly
+    excluded them would tell you that you are further from a threshold than you are.
+  </dd>
+
+  <dt>What does the subscription pay for?</dt>
+  <dd>
+    Re-reading the state pages twice a year and updating the files, so the figures are still right
+    in six months. Importing, the dashboard for the period you are in, entering your state
+    registrations, and exporting one state stay free.
+  </dd>
+
+  <dt>Where is my data?</dt>
+  <dd>
+    On your device, in one file, and nowhere else. The app makes no network request of any kind.
+    Settings → Your data has a button that hands you that file exactly as it is stored, and one
+    that deletes it.
+  </dd>
+</dl>
+
+<h2>Privacy</h2>
+<p>
+  The app collects nothing, sends nothing and has no account. It never reads a buyer’s name, email,
+  telephone or address: the import cannot see those columns, and there is nowhere in the stored file
+  to put them.
+</p>
+
+<h2 id="disclaimer">Disclaimer</h2>
+<p class="notice">
+  This application is a sales record organisation tool. It is not tax, legal or accounting advice
+  and it does not replace a qualified professional. It does not determine whether you are required
+  to collect, register for or file sales tax in any state, and it does not calculate tax owed. The
+  thresholds and rules it displays are copies of public sources, shown with the date on which they
+  were verified, and they may be out of date or may not apply to your situation. Compliance is your
+  responsibility.
+</p>
+
+<footer>NexusLedger · support.NexusLedger@gmail.com</footer>
